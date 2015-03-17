@@ -3,7 +3,7 @@ using ColossalFramework.UI;
 
 namespace GenerateSpritesListMod
 {
-	public class GenerateSpritesListMod : IUserMod
+    public class GenerateSpritesListMod : IUserMod
     {
         public string Name { 
             get { return "GenerateSpritesListMod";  }
@@ -18,7 +18,7 @@ namespace GenerateSpritesListMod
     {
     	public override void OnLevelLoaded(LoadMode mode) 
         {
-        	using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"sprites.txt", false))
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"sprites.txt", false))
             {
             	UIView view = GameObject.FindObjectOfType<UIView>() as UIView;
             	
